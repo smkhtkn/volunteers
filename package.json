@@ -1,0 +1,14 @@
+{
+  "name": "volunteers",
+  "version": "1.0.0",
+  "description": "Volunteers Sakharov team's project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrei Samokhotkin",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
