@@ -1,17 +1,19 @@
 {{ define "main" }}
 
-<div class="rainbow-gradient vh-100">
-    <div class="container pt-4">
+<div class="rainbow-gradient">
+
+<div class="vh-75">
+    <div class="container py-5">
         <div class="row align-items-center h-100 pt-5">
             <div class="col-lg-6 col-md-6 mb-5 pb-4">
             <h2 class="fw-medium display-5 mb-4">
                 <div class="d-flex flex-row align-items-center">
-                    <span class="custom-title me-4 pe-2">Команда</span>
+                    <span class="custom-title me-4 pe-2">Волонтерская</span>
                     <div style="height: 2px; width: 100%; background-color: #000"></div>
                 </div>
                 <div class="d-flex flex-row align-items-center">
                     <div style="height: 2px; width: 100%; background-color: #000"></div>
-                    <span class="custom-title ms-4 ps-2">волонтеров</span>
+                    <span class="custom-title ms-4 ps-2">команда</span>
                 </div>
                 <div class="d-flex flex-row align-items-center">
                     <span class="custom-title me-4 pe-2">Сахарова</span>
@@ -23,11 +25,11 @@
                     <img src="/icons/1F308.svg" width="60" />
                     <img src="/icons/1F917.svg" width="60" />
                     <img src="/icons/262E.svg" width="60" />
-                    <img src="/icons/1F3F3-FE0F-200D-26A7-FE0F.svg" width="60" />
+                    <img src="/icons/1F3F3-FE0F-200D-26A7-FE0F.svg" class="d-none" width="60" />
                     <img src="/icons/1FAE0.svg" width="60" />
                 </div>
-                <p class="mb-5 display-7">
-                    Мы объединяем тех, кто хочет помогать правозащитным организациям и инициативам с задачами, не требующими экспертных знаний
+                <p class="mb-5 fw-light fs-4">
+                    Волонтёрская команда Сахарова – это сообщество людей, которые хотят внести свой посильный вклад в защиту прав человека. Мы помогаем правозащитным организациям, проектам и инициативам с задачами, не требующими профессиональной подготовки или экспертных знаний.
                 </p>
                 <button type="button" class="btn btn-dark btn-lg rounded-0">Заполнить анкету <img src="/icons/1F31F.svg" width="32" /></button>
             </div>
@@ -39,6 +41,119 @@
         </div>
         </div>
     </div>
+</div>
+
+<div class="container">
+    <h2 id="about" class="display-5 fw-bolder pb-4">О команде</h2>
+    <p class="lead">Нас объединяют ценности Андрея Дмитриевича Сахарова, который считал, что права человека являются универсальными и неотъемлемыми для всех людей и был убежден в их ключевой роли для поддержания на Земле мира и справедливости.</p>
+    <p class="lead">В нашей команде каждый может найти себе занятие по душе, будь то помощь с конкретными задачами, организация мероприятий или общение с единомышленниками и создание совместных проектов.</p>
+    <h3 id="about" class="display-6 fw-bolder pt-2 pb-4">Чем мы занимаемся?</h3>
+    <p class="lead">Обычно мы помогаем нескольким правозащитным организациям одновременно, работая над краткосрочными и долгосрочными задачами — разными по формату и содержанию. Из текущих активностей всегда можно выбрать занятие, которое подходит вам по времени и тематике.</p>
+    <p class="lead">К каждой задаче мы разрабатываем подробные инструкции, а также помогаем по ходу работы, в том числе организуя онлайн-коворкинги. Для более сложных или требующих командной работы задач мы создаем телеграм-чаты, а для более простых — ограничиваемся общением в боте, к которому обязательно нужно подключиться. Это несложно, но требует предварительного знакомства с нашей координаторской командой.</p>
+    <p class="lead">Мы рады проводить время вместе не только выполняя задачи, но и устраивая неформальные встречи. Сейчас мы регулярно видимся на онлайн-терапевтических группах и в книжном клубе, периодически у нас проходят лекции и воркшопы. Мы всегда открыты для новых идей и форматов и с удовольствием поддержим ваши инициативы и задумки!</p>
+    <p class="lead pb-4">Заполняйте волонтёрскую анкету, если хотите присоединиться к нам!</p>
+    <button type="button" class="btn btn-dark btn-lg rounded-0">Заполнить анкету <img src="/icons/1F31F.svg" width="32" /></button>
+</div>
+
+<div class="accordion container" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        А кто у вас волонтерит?
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Люди из разных стран, городов, разного возраста и специальностей.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        Сколько времени у меня будет уходить на волонтерство?
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Это зависит только от вашей занятости и желания. А вообще – задачи бывают разные, могут занять как 20 минут, так и несколько часов :)
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        Как организована отправка задач, а также дедлайн по ним и объем?
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Задачи вы получаете через телеграм-бота, у каждой задачи — свой дедлайн. Все задачки варьируются по времени, которое на них уходит. Есть есть задачи срочные, а есть долгосрочные. Так что it depends!
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            А что если я выпаду на какое-то время? Смогу вернуться?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Обстоятельства в жизни бывают разные, мы все это понимаем. Если нужна пауза, просто дайте об этом знать. А вернуться можно всегда... во всяком случае, к нам точно.
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            А вдруг я не справлюсь?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Вы будете помогать с задачами, не требующими специальных знаний. Все, что может предложить Волонтерская команда, вам по силам! Еще у нас есть регулярные терапевтические группы с психологом, на которые можно прийти, если почувствуете в этом необходимость
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            Если у меня еще нет опыта волонтерства, могу ли я волонтерить у вас?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Конечно! Наша команда — хорошая точка старта в правозащите :)
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+            Что нужно сделать, чтобы стать волонтером?
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Заполнить анкету и поделиться своим контактом с нашим ботом. В нем мы и свяжемся с вами
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+            Какие навыки вам могут пригодиться?
+          </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Самые разные — никогда не знаешь, какая задачка будет следующей! От дизайна до работы с Википедией — мы будем рады любым навыкам ;)
+          </div>
+        </div>
+    </div>
+  </div>
+
 </div>
 
 {{ end }}
