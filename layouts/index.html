@@ -1,12 +1,12 @@
 {{ define "main" }}
 
-<div class="rainbow-gradient">
+<!-- <div class="rainbow-gradient"> -->
   
   <button type="button" class="btn btn-link btn-floating btn-lg" id="btn-back-to-top">
     <img src="./icons/1F53A.svg" width="50">
   </button>
 
-<div class="vh-75">
+<div class="vh-75 bg-green">
     <div class="container py-5">
         <div class="row align-items-center h-100 pt-5">
             <div class="col-lg-6 col-md-6 mb-5 pb-4">
@@ -38,7 +38,7 @@
                 <button type="button" class="btn btn-info btn-lg rounded-0 fs-3 border border-dark border-2">Заполнить анкету <img src="/icons/1F31F.svg" width="38" /></button>
             </div>
             <div class="col-lg-6 col-md-6 d-flex justify-content-end">
-            <figure class="figure ms-5 ps-5">
+            <figure class="figure ms-5 ps-5 sakharov">
                 <img class="border border-2 border-black rounded-0 w-100 h-auto" src="sakharov1940.jpg" />
                 <figcaption class="figure-caption text-center">Андрей Сахаров, 1938-1940 гг.</figcaption>
             </figure>
@@ -47,8 +47,8 @@
     </div>
 </div>
 
-<div class="container-fluid bg-white px-0 border-top border-bottom border-2 border-black">
-    <div class="row col-6 my-5 mx-auto">
+<div class="container-fluid bg-rose px-0 border-top border-bottom border-2 border-black">
+    <div class="row col-6 my-5 mx-auto p-5 border border-2 border-black bg-cyan">
       <h2 id="about" class="display-2 text-center fw-bolder py-5">О команде</h2>
       <p class="fs-4 fw-light">Нас объединяют ценности Андрея Дмитриевича Сахарова, который считал, что права человека являются универсальными и неотъемлемыми для всех людей и был убежден в их ключевой роли для поддержания на Земле мира и справедливости.</p>
       <p class="fs-4 fw-light">В нашей команде каждый может найти себе занятие по душе, будь то помощь с конкретными задачами, организация мероприятий или общение с единомышленниками и создание совместных проектов.</p>
@@ -61,31 +61,33 @@
     </div>
 </div>
 
-<div class="container col-6 pt-5 mx-auto">
-  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <h2 id="faq" class="display-2 text-center fw-bolder py-5">FAQ</h2>
-    <div class="panel panel-default">
+<div class="container-fluid bg-gold">
+  <div class="row col-6 py-5 mx-auto">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <h2 id="faq" class="display-2 text-center fw-bolder py-5">FAQ</h2>
+      <div class="panel panel-default">
+        
+        {{partial "owns/acc.html" (dict "number" "1" "question" "А кто у вас волонтерит?" "response" "Люди из разных стран, городов, разного возраста и специальностей." "colorb" "92D3F5" "smiles" "d-none") }}
+        
+        {{partial "owns/acc.html" (dict "number" "2" "question" "Сколько времени у меня будет уходить на волонтерство?" "response" "Это зависит только от вашей занятости и желания. А вообще – задачи бывают разные, могут занять как 20 минут, так и несколько часов" "colorb" "FCEA2B" "smile" "1F60A") }}
+        
+        {{partial "owns/acc.html" (dict "number" "3" "question" "Как организована отправка задач, а также дедлайн по ним и объем?" "response" "Задачи вы получаете через телеграм-бота, у каждой задачи — свой дедлайн. Все задачки варьируются по времени, которое на них уходит. Есть есть задачи срочные, а есть долгосрочные. Так что it depends!" "colorb" "B399C8" "smiles" "d-none") }}
+        
+        {{partial "owns/acc.html" (dict "number" "4" "question" "А что если я выпаду на какое-то время? Смогу вернуться?" "response" "Обстоятельства в жизни бывают разные, мы все это понимаем. Если нужна пауза, просто дайте об этом знать. А вернуться можно всегда... во всяком случае, к нам точно." "colorb" "F1B31C" "smiles" "d-none") }}
+        
+        {{partial "owns/acc.html" (dict "number" "5" "question" "А вдруг я не справлюсь?" "response" "Вы будете помогать с задачами, не требующими специальных знаний. Все, что может предложить Волонтерская команда, вам по силам! Еще у нас есть регулярные терапевтические группы с психологом, на которые можно прийти, если почувствуете в этом необходимость." "colorb" "B1CC33" "smiles" "d-none") }}
+        
+        {{partial "owns/acc.html" (dict "number" "6" "question" "Если у меня еще нет опыта волонтерства, могу ли я волонтерить у вас?" "response" "Конечно! Наша команда — хорошая точка старта в правозащите" "colorb" "D0CFCE" "smile" "1F60A") }}
+        
+        {{partial "owns/acc.html" (dict "number" "7" "question" "Что нужно сделать, чтобы стать волонтером?" "response" "Заполнить анкету и поделиться своим контактом с нашим ботом. В нем мы и свяжемся с вами." "colorb" "FFA7C0" "smiles" "d-none") }}
+        
+        {{partial "owns/acc.html" (dict "number" "8" "question" "Какие навыки вам могут пригодиться?" "response" "Самые разные — никогда не знаешь, какая задачка будет следующей! От дизайна до работы с Википедией — мы будем рады любым навыкам" "colorb" "92D3F5" "smile" "1F60A") }}
       
-      {{partial "owns/acc.html" (dict "number" "1" "question" "А кто у вас волонтерит?" "response" "Люди из разных стран, городов, разного возраста и специальностей." "colorb" "92D3F5" "smiles" "d-none") }}
-      
-      {{partial "owns/acc.html" (dict "number" "2" "question" "Сколько времени у меня будет уходить на волонтерство?" "response" "Это зависит только от вашей занятости и желания. А вообще – задачи бывают разные, могут занять как 20 минут, так и несколько часов" "colorb" "FCEA2B" "smile" "1F60A") }}
-      
-      {{partial "owns/acc.html" (dict "number" "3" "question" "Как организована отправка задач, а также дедлайн по ним и объем?" "response" "Задачи вы получаете через телеграм-бота, у каждой задачи — свой дедлайн. Все задачки варьируются по времени, которое на них уходит. Есть есть задачи срочные, а есть долгосрочные. Так что it depends!" "colorb" "B399C8" "smiles" "d-none") }}
-      
-      {{partial "owns/acc.html" (dict "number" "4" "question" "А что если я выпаду на какое-то время? Смогу вернуться?" "response" "Обстоятельства в жизни бывают разные, мы все это понимаем. Если нужна пауза, просто дайте об этом знать. А вернуться можно всегда... во всяком случае, к нам точно." "colorb" "F1B31C" "smiles" "d-none") }}
-      
-      {{partial "owns/acc.html" (dict "number" "5" "question" "А вдруг я не справлюсь?" "response" "Вы будете помогать с задачами, не требующими специальных знаний. Все, что может предложить Волонтерская команда, вам по силам! Еще у нас есть регулярные терапевтические группы с психологом, на которые можно прийти, если почувствуете в этом необходимость." "colorb" "B1CC33" "smiles" "d-none") }}
-      
-      {{partial "owns/acc.html" (dict "number" "6" "question" "Если у меня еще нет опыта волонтерства, могу ли я волонтерить у вас?" "response" "Конечно! Наша команда — хорошая точка старта в правозащите" "colorb" "D0CFCE" "smile" "1F60A") }}
-      
-      {{partial "owns/acc.html" (dict "number" "7" "question" "Что нужно сделать, чтобы стать волонтером?" "response" "Заполнить анкету и поделиться своим контактом с нашим ботом. В нем мы и свяжемся с вами." "colorb" "FFA7C0" "smiles" "d-none") }}
-      
-      {{partial "owns/acc.html" (dict "number" "8" "question" "Какие навыки вам могут пригодиться?" "response" "Самые разные — никогда не знаешь, какая задачка будет следующей! От дизайна до работы с Википедией — мы будем рады любым навыкам" "colorb" "92D3F5" "smile" "1F60A") }}
-    
+      </div>
     </div>
   </div>
 </div>
 
-</div>
+<!-- </div> -->
 
 {{ end }}

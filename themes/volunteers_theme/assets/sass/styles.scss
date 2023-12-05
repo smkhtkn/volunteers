@@ -43,7 +43,7 @@ body {
     left:-20px;
     top: 14px;
     color:#816d6d !important;
-    background-color: #fcea2b;
+    background-color: $gold;
     border: 2px solid black;
     font-size: 15px;
     width: 60px;
@@ -56,7 +56,7 @@ body {
     content: url('../icons/2795.svg');
 }
 #accordion .panel-body{
-    background-color: white;
+    background-color: transparent;
     line-height: 25px;
     padding: 10px 25px 20px 35px ;
     border-top:none;
@@ -70,3 +70,38 @@ body {
     right: 30px;
     display: none;
     }
+
+.sakharov {
+    transform: rotate(1deg);
+    img {
+        box-shadow: -20px -20px $violet;
+    }
+}
+
+.bg-cyan {
+    background-color: transparentize($cyan, 0.7);
+}
+.bg-cyan-0 {
+    background-color: $cyan;
+}
+.bg-green {
+    background-color: transparentize($green, 0.7);
+}
+.bg-gold {
+    background-color: transparentize($gold, 0.7);
+}
+.bg-rose {
+    background-color: transparentize($rose, 0.7);
+}
+.bg-violet {
+    background-color: transparentize($violet, 0.7);
+}
+.bg-orange {
+    background-color: transparentize($orange, 0.7);
+}
+.bg-ogrey {
+    background-color: transparentize($ogrey, 0.7);
+}
+.bg-ogrey-0 {
+    background-color: $ogrey;
+}
