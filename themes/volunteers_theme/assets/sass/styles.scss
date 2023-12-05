@@ -90,8 +90,14 @@ body {
 .bg-gold {
     background-color: transparentize($gold, 0.7);
 }
+.bg-gold-0 {
+    background-color: $gold;
+}
 .bg-rose {
     background-color: transparentize($rose, 0.7);
+}
+.bg-rose-0 {
+    background-color: $rose;
 }
 .bg-violet {
     background-color: transparentize($violet, 0.7);
@@ -104,4 +110,9 @@ body {
 }
 .bg-ogrey-0 {
     background-color: $ogrey;
+}
+
+.rocket {
+    left: 532px;
+    top: 884px;
 }
