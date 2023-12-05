@@ -53,7 +53,7 @@
     <a class="nav-link" href="../blog/">Отзывы</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../blog/">FAQ</a>
+    <a class="nav-link" href="#faq">FAQ</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../blog/">Контакты</a>
@@ -84,7 +84,7 @@
     <footer class="footer fixed-bottom bg-dark">
 
     <div class="row footer-text">
-      <div class="col-12 col-md text-center text-md-left nav-link text-white">Команда волонтеров Сахарова - проект, 2023</div>
+      <div class="col-12 col-md text-center text-md-left nav-link text-white">Волонтерская команда Сахарова - проект, 2023</div>
     </div>
 
   
@@ -93,6 +93,30 @@
   
 
   <script src="../js/bundle.min.js" defer></script>
+  <script>
+  let mybutton = document.getElementById("btn-back-to-top");
+  
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    mybutton.addEventListener("click", backToTop);
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </footer>
   </footer>
 </body>

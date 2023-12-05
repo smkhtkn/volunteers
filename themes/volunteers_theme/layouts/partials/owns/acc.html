@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading{{with .number}}{{.}}{{end}}">
+        <h4 class="panel-title">
+            <a class="collapsed text-decoration-none d-block display-6 text-black" role="button" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapse{{with .number}}{{.}}{{end}}" aria-expanded="false" aria-controls="collapse{{with .number}}{{.}}{{end}}" style="background-color: #{{with .colorb}}{{.}}{{end}}; color: #{{with .colorb}}{{.}}{{end}};">
+                {{with .question}}{{.}}{{end}}
+                <span> </span>
+            </a>
+        </h4>
+    </div>
+    <div id="collapse{{with .number}}{{.}}{{end}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{with .number}}{{.}}{{end}}">
+        <div class="panel-body pt-4">
+            <p class="lead text-black">{{with .response}}{{.}}{{end}}<span class="badge text-bg-light bg-transparent {{with .smiles}}{{.}}{{end}} position-relative py-0 px-1" style="top:-3px;"><img src="/icons/{{with .smile}}{{.}}{{end}}.svg" width="40" /></span></p>
+        </div>
+    </div>
+</div>
