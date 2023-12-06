@@ -1,0 +1,10 @@
+<div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate({{with .rotation}}{{.}}{{end}}deg);">
+    <div class="card rounded-0 border border-2 border-black bg-{{with .background}}{{.}}{{end}}-0 shadow-{{with .shadows}}{{.}}{{end}}">
+      <div class="card-body text-center px-4 py-5">
+        <h5 class="card-title fs-3 fw-bolder">{{with .ctitle}}{{.}}{{end}}</h5>
+        <img src="/logos/{{with .cimage}}{{.}}{{end}}" width="180" class="py-3"/>
+        <p class="card-text">{{with .cdescription}}{{.}}{{end}}</p>
+        <a href="#" class="btn btn-{{with .btncolor}}{{.}}{{end}} btn-lg rounded-0 border border-dark border-2 fw-bolder">Узнать больше</a>
+      </div>
+    </div>
+  </div>

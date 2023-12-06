@@ -72,7 +72,7 @@ body {
     }
 
 .sakharov {
-    transform: rotate(1deg);
+    transform: rotate(2deg);
     img {
         box-shadow: -20px -20px $violet;
     }
@@ -84,8 +84,17 @@ body {
 .bg-cyan-0 {
     background-color: $cyan;
 }
+.shadow-cyan {
+    box-shadow: 20px 20px $cyan;
+}
 .bg-green {
     background-color: transparentize($green, 0.7);
+}
+.bg-green-0 {
+    background-color: $green;
+}
+.shadow-green {
+    box-shadow: 20px 20px $green;
 }
 .bg-gold {
     background-color: transparentize($gold, 0.7);
@@ -93,23 +102,44 @@ body {
 .bg-gold-0 {
     background-color: $gold;
 }
+.shadow-gold {
+    box-shadow: 20px 20px $gold;
+}
 .bg-rose {
     background-color: transparentize($rose, 0.7);
 }
 .bg-rose-0 {
     background-color: $rose;
 }
+.shadow-rose {
+    box-shadow: 20px 20px $rose;
+}
 .bg-violet {
     background-color: transparentize($violet, 0.7);
 }
+.bg-violet-0 {
+    background-color: $violet;
+}
+.shadow-violet {
+    box-shadow: 20px 20px $violet;
+}
 .bg-orange {
     background-color: transparentize($orange, 0.7);
+}
+.bg-orange-0 {
+    background-color: $orange;
+}
+.shadow-orange {
+    box-shadow: 20px 20px $orange;
 }
 .bg-ogrey {
     background-color: transparentize($ogrey, 0.7);
 }
 .bg-ogrey-0 {
     background-color: $ogrey;
+}
+.shadow-ogrey {
+    box-shadow: 20px 20px $ogrey;
 }
 
 .rocket {

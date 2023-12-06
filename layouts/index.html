@@ -62,6 +62,43 @@
     </div>
 </div>
 
+<div class="container-fluid bg-cyan border-bottom border-2 border-black">
+  <div class="row col-10 py-5 mx-auto">
+    <h2 id="campaigns" class="display-2 text-center fw-bolder pt-4 pb-5">Кому мы помогаем</h2>
+
+    <div class="d-flex justify-content-evenly">
+      
+      {{partial "owns/card.html" (dict "ctitle" "Команда против пыток" "cdescription" "Российская правозащитная организация, которая занимается общественным расследованием дел о применении пыток, опираясь на внутригосударственные механизмы защиты потерпевших. 18+" "cimage" "againsttorture.png" "background" "ogrey" "btncolor" "success" "rotation" "2" "shadows" "green") }}
+    
+      {{partial "owns/card.html" (dict "ctitle" "ЦЗПЧ Мемориал" "cdescription" "Российская межрегиональная общественная правозащитная организация. Центр составляет отчеты о нарушениях прав человека, занимается составлением списков политических заключенных и их поддержкой, оказывает юридическую и информационную поддержку беженцам, мигрантам и призывникам." "cimage" "memohr.png" "background" "cyan" "btncolor" "danger" "rotation" "-1" "shadows" "rose") }}
+
+      {{partial "owns/card.html" (dict "ctitle" "Декларатор" "cdescription" "Постоянно пополняемая база данных о российских публичных должностных лицах: депутатах, чиновниках, судьях, представителях региональной и муниципальной власти, сотрудниках госкорпораций, госкомпаний, бюджетных учреждений и прочих организаций." "cimage" "memohr.png" "background" "green" "btncolor" "warning" "rotation" "1" "shadows" "gold") }}
+    
+    </div>
+
+    <div class="pt-5 mt-3 d-flex justify-content-around">
+
+      {{partial "owns/card.html" (dict "ctitle" "Команда против пыток" "cdescription" "Российская правозащитная организация, которая занимается общественным расследованием дел о применении пыток, опираясь на внутригосударственные механизмы защиты потерпевших. 18+" "cimage" "againsttorture.png" "background" "rose" "btncolor" "primary" "rotation" "0" "shadows" "violet") }}
+
+      {{partial "owns/card.html" (dict "ctitle" "Тендерскоп" "cdescription" "Проект команды независимых экспертов, посвященный анализу гос- и муниципальных закупок." "cimage" "memohr.png" "background" "gold" "btncolor" "info" "rotation" "1" "shadows" "cyan") }}
+
+      {{partial "owns/card.html" (dict "ctitle" "ДумаБинго" "cdescription" "Проект о лоббизме, своеобразная энциклопедия о членах Госдумы и Совета Федерации" "cimage" "againsttorture.png" "background" "ogrey" "btncolor" "light" "rotation" "-2" "shadows" "orange") }}
+
+    </div>
+
+    <div class="pt-5 mt-3 d-flex justify-content-around">
+
+      {{partial "owns/card.html" (dict "ctitle" "ИЦ «Сова»" "cdescription" "Информационно-аналитический центр, занимающийся проблемами национализма и ксенофобии, взаимоотношениями религии и общества, формированием и реализацией антиэкстремистской политики в России." "cimage" "memohr.png" "background" "cyan" "btncolor" "danger" "rotation" "-1" "shadows" "rose") }}
+
+      {{partial "owns/card.html" (dict "ctitle" "Amnesty International Россия" "cdescription" "Отделение международной неправительственной организации, основанной в Великобритании в 1961 году. Amnesty International ставит своей целью «предпринимать исследования и действия, направленные на предупреждение и прекращение нарушений прав на физическую и психологическую неприкосновенность, на свободу совести и самовыражения, на свободу от дискриминации в контексте своей работы по продвижению прав человека»." "cimage" "memohr.png" "background" "green" "btncolor" "warning" "rotation" "1" "shadows" "gold") }}
+
+      {{partial "owns/card.html" (dict "ctitle" "ОВД-Инфо" "cdescription" "Независимый правозащитный медиапроект, посвященный политическим преследованиям в России" "cimage" "againsttorture.png" "background" "rose" "btncolor" "primary" "rotation" "0" "shadows" "violet") }}
+
+    </div>
+
+  </div>
+</div>
+
 <div class="container-fluid bg-gold">
   <div class="row col-6 py-5 mx-auto">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
