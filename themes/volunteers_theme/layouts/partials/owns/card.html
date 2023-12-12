@@ -4,7 +4,7 @@
         <h5 class="card-title fs-3 fw-bolder">{{with .ctitle}}{{.}}{{end}}</h5>
         <img src="/logos/{{with .cimage}}{{.}}{{end}}" width="{{with .imgsize}}{{.}}{{end}}" class="{{with .imgy}}{{.}}{{end}}"/>
         <p class="card-text">{{with .cdescription}}{{.}}{{end}}</p>
-        <a href="#" class="btn btn-{{with .btncolor}}{{.}}{{end}} btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
+        <a href="{{with .linkto}}{{.}}{{end}}" target="_blank" class="btn btn-{{with .btncolor}}{{.}}{{end}} btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
