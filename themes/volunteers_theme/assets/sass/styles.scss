@@ -168,3 +168,19 @@ body {
 .display-0 {
     font-size: 6rem;
 }
+
+.letter-spacing-2 {
+    letter-spacing: .2rem;
+}
+
+.crop-text-3 {
+    -webkit-line-clamp: 4;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.btn:active {
+    border-color: transparent !important;
+}

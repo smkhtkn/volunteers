@@ -1,0 +1,22 @@
+<div class="card text-bg-white mb-3 rounded-5 col-{{with .col}}{{.}}{{end}}" style="transform: rotate({{with .rotation}}{{.}}{{end}}deg);">
+    <div class="card-body">
+      <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="/icons/{{with .icon}}{{.}}{{end}}.svg" width="40" /></span>{{with .name}}{{.}}{{end}}</h5>
+      <span class="card-text crop-text-3 col-12">{{with .testimonial}}{{.}}{{end}}</span>
+    </div>
+    <button type="button" class="btn btn-white pb-3" data-bs-toggle="modal" data-bs-target="#modal{{with .num}}{{.}}{{end}}">
+        <img src="/icons/ellipsis.svg" width="40" />
+    </button>
+  </div>
+
+  <div class="modal fade" id="modal{{with .num}}{{.}}{{end}}" tabindex="-1" aria-labelledby="modal{{with .num}}{{.}}{{end}}label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-5">
+        <div class="modal-header border-0 pb-1 pt-5 px-5">
+          <h1 class="modal-title fs-4 fw-bolder" id="modal{{with .num}}{{.}}{{end}}label"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="/icons/{{with .icon}}{{.}}{{end}}.svg" width="40" /></span>{{with .name}}{{.}}{{end}}</h1>
+        </div>
+        <div class="modal-body fs-4 pt-1 pb-5 px-5">
+            {{with .testimonial}}{{.}}{{end}}
+        </div>
+      </div>
+    </div>
+  </div>
