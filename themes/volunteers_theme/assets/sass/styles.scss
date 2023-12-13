@@ -86,6 +86,9 @@ body {
 .bg-cyan-0 {
     background-color: $cyan;
 }
+.bg-cyan-1 {
+    background-color: transparentize($cyan, 0.7);
+}
 .shadow-cyan {
     box-shadow: 20px 20px $cyan;
 }
@@ -93,8 +96,15 @@ body {
     background-image: url("../gggrain.svg");
     background-size: auto 100%;
 }
+.bg-green-rotate {
+    background-image: url("../gggrain4.svg");
+    background-size: auto 100%;
+}
 .bg-green-0 {
     background-color: $green;
+}
+.bg-green-1 {
+    background-color: transparentize($green, 0.7);
 }
 .shadow-green {
     box-shadow: 20px 20px $green;
