@@ -69,6 +69,7 @@ body {
     bottom: 40px;
     right: 30px;
     display: none;
+    z-index: 999999;
     }
 
 .sakharov {
@@ -163,8 +164,31 @@ body {
 }
 
 .rocket {
-    left: 532px;
-    top: 884px;
+    left: 25%;
+    top: 100%;
+}
+@media screen and (max-width: 1399px) {
+    .rocket {
+        left: 25%;
+        top: 111%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .rocket {
+        left: 6%;
+        top: 178%;
+    }
+}
+@media screen and (max-width: 861px) {
+    .rocket {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .display-sm-1 {
+        font-size: calc(1.625rem + 4.5vw);
+    }
 }
 
 .text-around-0 {
@@ -202,4 +226,13 @@ body {
     .partnerscard {
         width: 180px;
       }
+  }
+
+  .logovks {
+    width: 120px;
+  }
+    @media screen and (min-width: 768px) {
+        .logovks {
+            width: 180px;
+          }
   }
