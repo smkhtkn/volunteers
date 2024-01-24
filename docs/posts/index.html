@@ -21,18 +21,14 @@
   <header>
       <header class="navbar navbar-expand-lg border-bottom border-2 border-black bg-cyan">
     <div class="container-lg">
-      <div class="navbar-brand me-auto fs-2 me-lg-5" href="../">
-        <img src="../icons/1F9B8i.svg" alt="Волонтерская команда Сахарова" width="200" class="d-inline-block align-text-top">
+      <div class="navbar-brand me-auto fs-2 me-lg-5 ms-3 ms-lg-0" href="../">
+        <img src="../icons/1F9B8i.svg" alt="Волонтерская команда Сахарова" class="logovks d-inline-block align-text-top">
       </div>
-    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="10" cy="10" r="7"></circle><line x1="21" y1="21" x2="15" y2="15"></line></svg>
-    </button>
     <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
     </button>
     <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">My Docs</h5>
         <button type="button" class="btn btn-link nav-link p-0" data-bs-dismiss="offcanvas" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
         </button>
@@ -60,7 +56,7 @@
   </li>
 </ul>
 
-    <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+    <ul id="socialMenu" class="d-none d-lg-block nav mx-auto flex-row order-lg-4">
       <li class="nav-item">
         <a class="nav-link social-link pe-0" href="https://instagram.com/">
           <img src="../icons/E043.svg" alt="Instagram" width="32" class="d-inline-block align-text-top">
@@ -93,11 +89,21 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
 
   </main>
   <footer>
-    <footer class="footer fixed-bottom bg-dark">
+    <footer class="footer py-5 bg-cyan">
+<div class="container">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">О команде</a></li>
+    <li class="nav-item"><a href="#campaigns" class="nav-link px-2 text-body-secondary">Кому мы помогаем</a></li>
+    <li class="nav-item"><a href="#assistance" class="nav-link px-2 text-body-secondary">Как именно помогаем</a></li>
+    <li class="nav-item"><a href="#testimonials" class="nav-link px-2 text-body-secondary">Отзывы</a></li>
+    <li class="nav-item"><a href="#faq" class="nav-link px-2 text-body-secondary">FAQ</a></li>
+    <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-body-secondary">Контакты</a></li>
+  </ul>
 
     <div class="row footer-text">
       <div class="col-12 col-md text-center text-md-left nav-link text-white">Волонтерская команда Сахарова - проект, 2023</div>
     </div>
+</div>
 
   
 
@@ -128,6 +134,17 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const offcanvasLinks = document.querySelectorAll('.nav-link');
+    const offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasNavMain'));
+    offcanvasLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        offcanvas.hide();
+      });
+    });
+  });
   </script>
 </footer>
   </footer>

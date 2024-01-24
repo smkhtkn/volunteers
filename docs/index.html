@@ -22,18 +22,14 @@
   <header>
       <header class="navbar navbar-expand-lg border-bottom border-2 border-black bg-cyan">
     <div class="container-lg">
-      <div class="navbar-brand me-auto fs-2 me-lg-5" href="./">
-        <img src="./icons/1F9B8i.svg" alt="Волонтерская команда Сахарова" width="200" class="d-inline-block align-text-top">
+      <div class="navbar-brand me-auto fs-2 me-lg-5 ms-3 ms-lg-0" href="./">
+        <img src="./icons/1F9B8i.svg" alt="Волонтерская команда Сахарова" class="logovks d-inline-block align-text-top">
       </div>
-    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="10" cy="10" r="7"></circle><line x1="21" y1="21" x2="15" y2="15"></line></svg>
-    </button>
     <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
     </button>
     <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">My Docs</h5>
         <button type="button" class="btn btn-link nav-link p-0" data-bs-dismiss="offcanvas" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
         </button>
@@ -61,7 +57,7 @@
   </li>
 </ul>
 
-    <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+    <ul id="socialMenu" class="d-none d-lg-block nav mx-auto flex-row order-lg-4">
       <li class="nav-item">
         <a class="nav-link social-link pe-0" href="https://instagram.com/">
           <img src="./icons/E043.svg" alt="Instagram" width="32" class="d-inline-block align-text-top">
@@ -79,14 +75,14 @@
 
 
   
-  <button type="button" class="btn btn-link btn-floating btn-lg" id="btn-back-to-top">
+  <button type="button" class="btn btn-link btn-floating btn-lg d-none d-md-block" id="btn-back-to-top">
     <img src="./icons/1F53A.svg" width="50">
   </button>
 
 <div class="vh-75 bg-green">
     <div class="container py-5">
-        <div class="row align-items-center h-100 pt-5">
-            <div class="col-lg-6 col-md-6 mb-5 pb-4">
+        <div class="row align-items-center h-100 pt-3 pt-lg-5">
+            <div class="col-lg-6 mb-5 pb-4 mx-auto order-2 order-lg-1 pt-4 pt-lg-0">
             <h2 class="fw-medium display-5 mb-4">
                 <div class="d-flex flex-row align-items-center">
                     <span class="custom-title me-4 pe-2 fw-bolder text-uppercase text-white text-around-1 letter-spacing-2">Волонтерская</span>
@@ -101,21 +97,21 @@
                     <div style="height: 2px; width: 100%; background-color: #000"></div>
                 </div>
             </h2>
-                <div class="mb-4">
+                <div class="mb-4 text-center text-lg-start">
                     <img src="./icons/1F30D.svg" width="70" />
-                    <img src="./icons/1F308.svg" width="70" />
+                    <img src="./icons/1F308.svg" class="d-none" width="70" />
                     <img src="./icons/1F90F-1F3FB.svg" width="70" />
                     <img src="./icons/262E.svg" width="70" />
                     <img src="./icons/1F3F3-FE0F-200D-26A7-FE0F.svg" class="d-none" width="70" />
                     <img src="./icons/1FAE0.svg" width="70" />
                 </div>
-                <p class="mb-5 fw-normal fs-4">
+                <p class="mb-5 fw-normal fs-4 text-center text-lg-start">
                     Волонтёрская команда Сахарова – это сообщество людей, которые хотят внести свой посильный вклад в защиту прав человека. Мы помогаем правозащитным организациям, проектам и инициативам с задачами, не требующими профессиональной подготовки или экспертных знаний.
                 </p>
-                <a href="https://airtable.com/appyYAXfhEgt9L2Wp/shryhuoC9KbR3IceZ" target="_blank" class="btn btn-info btn-lg rounded-5 fs-3 border border-dark border-2 fw-bolder" role="button">Заполнить анкету <img src="./icons/1F31F.svg" width="38" /></a>
+                <div class="text-center text-lg-start"><a href="https://airtable.com/appyYAXfhEgt9L2Wp/shryhuoC9KbR3IceZ" target="_blank" class="btn btn-info btn-lg rounded-5 fs-3 border border-dark border-2 fw-bolder" role="button">Заполнить анкету <img src="./icons/1F31F.svg" width="38" /></a></div>
             </div>
-            <div class="col-lg-6 col-md-6 d-flex justify-content-end">
-            <figure class="figure ms-5 ps-5 sakharov">
+            <div class="col-12 col-lg-6 d-flex mx-auto order-1 order-lg-2">
+            <figure class="figure mx-3 px-3 mx-sm-4 px-sm-4 mx-md-5 px-md-5 ms-lg-5 ps-lg-5 me-lg-0 pe-lg-0 pb-4 pb-lg-0 pt-4 pt-lg-0 sakharov">
                 <img class="border border-2 border-black rounded-5 w-100 h-auto" src="sakharov1940.jpg" />
                 <figcaption class="figure-caption text-center">Андрей Сахаров, 1938-1940 гг.</figcaption>
             </figure>
@@ -124,10 +120,9 @@
     </div>
 </div>
 
-<div class="container-fluid bg-rose px-0 border-top border-bottom border-2 border-black">
-  <div class="position-absolute rocket"><img src="./icons/1F680.svg" width="180" /></div>
-    <div class="row col-6 my-5 mx-auto p-5 rounded-5 border border-2 border-black bg-rose-1">
-      <h2 id="about" class="display-0 text-center fw-bolder pt-4 pb-5 text-uppercase text-white text-around-0 letter-spacing-2">О команде</h2>
+<div class="container-fluid bg-rose border-top border-bottom border-2 border-black">
+    <div class="row col-12 col-md-10 col-lg-8 col-xxl-6 my-5 mx-auto p-lg-4 p-xl-5 rounded-5 border border-2 border-black bg-rose-1">
+      <h2 id="about" class="display-1 text-center fw-bolder mt-3 py-5 text-uppercase text-white text-around-0 letter-spacing-2">О команде</h2>
       <p class="fs-4 fw-normal">Нас объединяют ценности Андрея Дмитриевича Сахарова, который считал, что права человека являются универсальными и неотъемлемыми для всех людей и был убежден в их ключевой роли для поддержания на Земле мира и справедливости.</p>
       <p class="fs-4 fw-normal">В нашей команде каждый может найти себе занятие по душе, будь то помощь с конкретными задачами, организация мероприятий или общение с единомышленниками и создание совместных проектов.</p>
       <h3 class="display-5 text-center fw-bolder pt-2 pb-4 text-uppercase text-white text-around-1 letter-spacing-2">Чем мы занимаемся?</h3>
@@ -142,149 +137,137 @@
 </div>
 
 <div class="container-fluid bg-cyan border-2 border-black">
-  <div class="row col-10 py-5 mx-auto">
-    <h2 id="campaigns" class="display-0 text-center fw-bolder py-5 text-uppercase text-white text-around-0 letter-spacing-2">Кому мы помогаем</h2>
+  <div class="row col-12 col-xxl-9 py-5 mx-auto">
+    <h2 id="campaigns" class="display-1 text-center fw-bolder py-5 text-uppercase text-white text-around-0 letter-spacing-2">Кому мы помогаем</h2>
 
-    <div class="pt-5 d-flex justify-content-evenly">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mx-auto">
       
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(2deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(2deg);">
     <div class="card rounded-5 border border-2 border-black bg-ogrey-0 shadow-green">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">Команда против пыток</h5>
-        <img src="./logos/againsttorture.png" width="180" class="py-3"/>
+        <img src="./logos/againsttorture.png" class="partnerscard py-3"/>
         <p class="card-text">Российская правозащитная организация, которая занимается общественным расследованием дел о применении пыток, опираясь на внутригосударственные механизмы защиты потерпевших. 18&#43;</p>
         <a href="https://pytkam.net/" target="_blank" role="button" class="btn btn-success btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
     
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(-1deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(-1deg);">
     <div class="card rounded-5 border border-2 border-black bg-cyan-0 shadow-rose">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">ЦЗПЧ Мемориал</h5>
-        <img src="./logos/memohr.png" width="180" class="py-3"/>
+        <img src="./logos/memohr.png" class="partnerscard py-3"/>
         <p class="card-text">Российская правозащитная организация, которая составляет отчеты о нарушениях прав человека, оказывает юридическую и информационную поддержку политическим заключенным, беженцам, мигрантам и призывникам.</p>
         <a href="https://memorialcenter.org/" target="_blank" role="button" class="btn btn-danger btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(1deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(1deg);">
     <div class="card rounded-5 border border-2 border-black bg-green-0 shadow-gold">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">Декларатор</h5>
-        <img src="./logos/declarator.png" width="180" class="py-3"/>
+        <img src="./logos/declarator.png" class="partnerscard py-3"/>
         <p class="card-text">База данных о российских публичных должностных лицах: депутатах, чиновниках, судьях, представителях региональной и муниципальной власти, сотрудниках госкорпораций, госкомпаний и бюджетных учреждений.</p>
         <a href="https://declarator.org/" target="_blank" role="button" class="btn btn-warning btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
-    
-    </div>
 
-    <div class="pt-5 mt-5 d-flex justify-content-around">
-
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(0deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(0deg);">
     <div class="card rounded-5 border border-2 border-black bg-rose-0 shadow-violet">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">Тендерскоп</h5>
-        <img src="./logos/tenderscope.svg" width="280" class="py-5 my-4"/>
+        <img src="./logos/tenderscope.svg" class="partnerscard py-5 my-4"/>
         <p class="card-text">Проект независимых экспертов по госзакупкам, которые занимаются анализом государственных и муниципальных закупок с целью сделать эту сферу прозрачнее.</p>
         <a href="https://tenderscope.org/" target="_blank" role="button" class="btn btn-primary btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(1deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(1deg);">
     <div class="card rounded-5 border border-2 border-black bg-gold-0 shadow-cyan">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">Архив Сахарова</h5>
-        <img src="./logos/archive.png" width="180" class="py-3"/>
+        <img src="./logos/archive.png" class="partnerscard py-3"/>
         <p class="card-text">Негосударственный архив, который хранит документы и материалы из личных архивов Андрея Дмитриевича Сахарова и Елены Георгиевны Боннэр.</p>
         <a href="https://www.sakharov-archive.ru/" target="_blank" role="button" class="btn btn-info btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(-2deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(-1deg);">
     <div class="card rounded-5 border border-2 border-black bg-ogrey-0 shadow-orange">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">ДумаБинго</h5>
-        <img src="./logos/dumabingo.png" width="180" class="py-4"/>
+        <img src="./logos/dumabingo.png" class="partnerscard py-4"/>
         <p class="card-text">Проект о лоббизме в российском парламенте, раскрывающий связи депутатов Госдумы и сенаторов Совета Федерации с крупным бизнесом, региональными элитами, силовиками и другими группами.</p>
         <a href="https://dumabingo.org/" target="_blank" role="button" class="btn btn-light btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-    </div>
-
-    <div class="pt-5 mt-5 d-flex justify-content-around">
-
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(-1deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(-1deg);">
     <div class="card rounded-5 border border-2 border-black bg-cyan-0 shadow-rose">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">ИЦ «Сова»</h5>
-        <img src="./logos/sova.png" width="180" class="py-3"/>
+        <img src="./logos/sova.png" class="partnerscard py-3"/>
         <p class="card-text">Группа исследователей, в сферу интересов которой входят проблемы национализма и ксенофобии, взаимоотношения религии и общества, формирование и реализация антиэкстремистской политики в России.</p>
         <a href="https://www.sova-center.ru/" target="_blank" role="button" class="btn btn-danger btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(1deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(1deg);">
     <div class="card rounded-5 border border-2 border-black bg-green-0 shadow-gold">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">Amnesty International Россия</h5>
-        <img src="./logos/amnesty.png" width="180" class="py-3"/>
+        <img src="./logos/amnesty.png" class="partnerscard py-3"/>
         <p class="card-text">Отделение международной неправительственной организации, которая борется за соблюдение всех прав человека, закреплённых во Всеобщей декларации прав человека 1948 года.</p>
         <a href="https://eurasia.amnesty.org/" target="_blank" role="button" class="btn btn-warning btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(0deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(0deg);">
     <div class="card rounded-5 border border-2 border-black bg-rose-0 shadow-violet">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">ОВД-Инфо</h5>
-        <img src="./logos/ovd.png" width="180" class="py-3"/>
+        <img src="./logos/ovd.png" class="partnerscard py-3"/>
         <p class="card-text">Независимый правозащитный медиапроект, который посвящен преследованиям по политическим мотивам в современной России, информирует о них и помогает задержанным на акциях протеста.</p>
         <a href="https://ovd.info/" target="_blank" role="button" class="btn btn-primary btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-    </div>
-
-    <div class="py-5 my-5 d-flex justify-content-around">
-
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(0deg);">
-    <div class="card rounded-5 border border-2 border-black bg-rose-0 shadow-violet">
-      <div class="card-body text-center px-4 py-5">
-        <h5 class="card-title fs-3 fw-bolder">Альманах «Ажур»</h5>
-        <img src="./logos/ajoure.png" width="180" class="py-3"/>
-        <p class="card-text">Проект, посвящённый политическим репрессиям, который пытается дать слово политическим заключенным и поддерживать их письмами, а также содействовать организациям, оказывающим им помощь.</p>
-        <a href="https://t.me/almanac_azhur" target="_blank" role="button" class="btn btn-primary btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
-      </div>
-    </div>
-  </div>
-
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(-2deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(0deg);">
     <div class="card rounded-5 border border-2 border-black bg-ogrey-0 shadow-orange">
       <div class="card-body text-center px-4 py-5">
-        <h5 class="card-title fs-3 fw-bolder">Русь сидящая</h5>
-        <img src="./logos/rus.png" width="280" class="py-4"/>
-        <p class="card-text">Неправительственная организация, целью которой — юридическая и гуманитарная помощь гражданам, столкнувшимся с нарушением своих прав со стороны следственных органов и пенитенциарной системы.</p>
-        <a href="https://zekovnet.ru/" target="_blank" role="button" class="btn btn-light btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
+        <h5 class="card-title fs-3 fw-bolder">Альманах «Ажур»</h5>
+        <img src="./logos/ajoure.png" class="partnerscard py-4"/>
+        <p class="card-text">Проект, посвящённый политическим репрессиям, который пытается дать слово политическим заключенным и поддерживать их письмами, а также содействовать организациям, оказывающим им помощь.</p>
+        <a href="https://t.me/almanac_azhur" target="_blank" role="button" class="btn btn-light btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
     </div>
   </div>
 
-      <div class="col-sm-3 mb-3 mb-sm-0" style="transform: rotate(1deg);">
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(-1deg);">
+    <div class="card rounded-5 border border-2 border-black bg-rose-0 shadow-violet">
+      <div class="card-body text-center px-4 py-5">
+        <h5 class="card-title fs-3 fw-bolder">Русь сидящая</h5>
+        <img src="./logos/rus.png" class="partnerscard py-5"/>
+        <p class="card-text">Неправительственная организация, целью которой — юридическая и гуманитарная помощь гражданам, столкнувшимся с нарушением своих прав со стороны следственных органов и пенитенциарной системы.</p>
+        <a href="https://zekovnet.ru/" target="_blank" role="button" class="btn btn-primary btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
+      </div>
+    </div>
+  </div>
+
+      <div class="col pb-5 px-4 mb-sm-0 d-flex" style="transform: rotate(1deg);">
     <div class="card rounded-5 border border-2 border-black bg-gold-0 shadow-cyan">
       <div class="card-body text-center px-4 py-5">
         <h5 class="card-title fs-3 fw-bolder">Лаборатория университетской прозрачности</h5>
-        <img src="./logos/lupa.png" width="200" class="py-3"/>
+        <img src="./logos/lupa.png" class="partnerscard py-3"/>
         <p class="card-text">Проект, который учит делать исследования прозрачности и коррупционных рисков в университетах, а также участвовать в изменении университетской политики и улучшать качество образования.</p>
         <a href="https://uni-loup.ru/" target="_blank" role="button" class="btn btn-info btn-lg rounded-5 border border-dark border-2 fw-bolder">Узнать больше</a>
       </div>
@@ -296,9 +279,9 @@
   </div>
 </div>
 
-<div class="container-fluid bg-green px-0 border-top border-bottom border-2 border-black">
-    <div class="row col-6 my-5 mx-auto p-5 rounded-5 border border-2 border-black bg-transparent">
-      <h2 id="assistance" class="display-0 text-center fw-bolder pt-4 pb-5 text-uppercase text-white text-around-0 letter-spacing-2">Как именно помогаем?</h2>
+<div class="container-fluid bg-green border-top border-bottom border-2 border-black">
+    <div class="row col-12 col-md-10 col-lg-6 my-5 mx-auto p-5 rounded-5 border border-2 border-black bg-transparent">
+      <h2 id="assistance" class="display-4 display-sm-1 text-center fw-bolder pt-4 pb-5 text-uppercase text-white text-around-0 letter-spacing-2">Как именно помогаем?</h2>
       <p class="fs-4 fw-normal">По-разному! Вот лишь некоторые из задач, которые у нас бывают:</p>
       <p class="fs-4 fw-normal"><span class="badge text-bg-light bg-transparent  position-relative py-0 ps-1 pe-3" style="top:-3px;"><img src="./icons/1F4DC.svg" width="40" /></span>Работа с текстами: написание, вычитка, переводы;</p>
       <p class="fs-4 fw-normal"><span class="badge text-bg-light bg-transparent  position-relative py-0 ps-1 pe-3" style="top:-3px;"><img src="./icons/E054.svg" width="40" /></span>Работа с сайтами: поиск и редактирование информации, тестирование;</p>
@@ -312,11 +295,12 @@
     </div>
 </div>
 
-<div class="container-fluid bg-rose px-0 border-bottom border-2 border-black">
-    <div class="row py-5">
-      <h2 id="testimonials" class="display-0 text-center fw-bolder pt-4 pb-5 text-uppercase text-white text-around-0 letter-spacing-2">Отзывы</h2>
-      <div class="d-flex justify-content-evenly col-9 mx-auto pt-3 mb-3 pb-4 mb-4">
-        <div class="card text-bg-white mb-3 rounded-5 col-3" style="transform: rotate(-1deg);">
+<div class="container-fluid bg-rose border-bottom border-2 border-black">
+    <div class="row col-12 col-xxl-9 mx-auto py-5">
+      <h2 id="testimonials" class="display-1 text-center fw-bolder pt-5 pb-5 text-uppercase text-white text-around-0 letter-spacing-2">Отзывы</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mx-auto pb-5 mb-5">
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(-1deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F9DD.svg" width="40" /></span>Ксюша</h5>
       <span class="card-text crop-text-3 col-12">Я решила волонтерить из-за большого количества совершенно разных задач. От написания или переводов текстов, до организации различных мероприятий и творческой деятельности. Это не просто место, где ты постоянно делаешь одну и ту же практическую работу, но и чувствуешь возможность показать свою индивидуальность. Волонтёрство даёт мне возможность общаться с людьми, защищающими такие же права и свободы, как я. Здесь я чувствую себя комфортнее, чем дома.</span>
@@ -325,6 +309,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -340,7 +325,8 @@
   </div>
 
         
-        <div class="card text-bg-white mb-3 rounded-5 col-3" style="transform: rotate(-2deg);">
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(-2deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F469-200D-1F680.svg" width="40" /></span>Лилия</h5>
       <span class="card-text crop-text-3 col-12">Я решила волонтёрить случайно - просто искала себе какое-то дополнительное занятие помимо учёбы и решила, что дистанционный формат мне подойдёт. Я занималась расшифровкой рукописей и аудиозаписей, систематизацией архива, была модератором ридинг - группы и участвовала в киноклубе. Всё это даёт мне чувство локтя, общей работы над большим и важным делом, мотивирует больше читать.</span>
@@ -349,6 +335,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -364,7 +351,8 @@
   </div>
 
 
-        <div class="card text-bg-white mb-3 rounded-5 col-3" style="transform: rotate(1deg);">
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(1deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F9D9-200D-2640-FE0F.svg" width="40" /></span>Ульяна</h5>
       <span class="card-text crop-text-3 col-12">Я решила волонтерить, потому что хотелось делать что-то, что я считаю важным. С того момента, как присоединилась, я занималась, в основном, тем, что расшифровывала письма и архивные записи лекций. В общем, помогала по мере сил и возможностей. Пока работала над расшифровкой архивов, прочитала/прослушала много личных историй, связанных с репрессиями, увидела живое человеческое лицо за цифрами и статистикой. Больше узнала о Сахарове и его жизни, познакомилась с приятными людьми, почувствовала себя хоть немного полезной обществу.</span>
@@ -373,6 +361,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -387,9 +376,9 @@
     </div>
   </div>
 
-      </div>
-      <div class="d-flex justify-content-evenly col-9 mx-auto pt-3 mb-3 pb-4 mb-4">
-        <div class="card text-bg-white mb-3 rounded-5 col-3" style="transform: rotate(0deg);">
+
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(0deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F9B8-200D-2640-FE0F.svg" width="40" /></span>Саша</h5>
       <span class="card-text crop-text-3 col-12">Однажды я захотела чем-нибудь помочь тем, кто занимается правозащитной деятельностью. Но подходящего образования или опыта у меня нет и я не знала, с чего начать. В поисках вариантов я наткнулась на сайт и сразу заполнила анкету. В основном я занимаюсь дистанционным задачами: перевожу и расшифровываю тексты или аудиозаписи. Мне нравится, что такие задачи дают возможность не только помогать правозащитникам, но и делать это в любое время и в любом месте. Главное, что дает мне Команда — это возможность помочь правозащитным организациям. Выполняя разные задачи, я получаю какие-нибудь новые навыки (например, теперь я умею работать с гугл-документами и таблицами), поддерживаю уровень уже полученных, а ещё узнаю много нового про мир правозащиты. Кроме того, для меня важно знать, что есть люди, разделяющие мои взгляды и готовые делать что-то на благо других. Таких людей я нашла в Волонтёрской команде Сахарова!</span>
@@ -398,6 +387,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -413,7 +403,8 @@
   </div>
 
         
-        <div class="card text-bg-white mb-3 rounded-5 col-3" style="transform: rotate(2deg);">
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(2deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F9DA-200D-2640-FE0F.svg" width="40" /></span>Наташа</h5>
       <span class="card-text crop-text-3 col-12">Опыт волонтёрства для меня был незнаком, тем интереснее были ожидания. Они не то что оправдались, а превзошли сами себя! Быть волонтёркой в Команде — работать над задачами, которые дают возможность как прикоснуться к истории, к прошлому, так и над задачами, связанными с настоящим, а именно современными правозащитными организациями. На пути моего волонтёрства встречаются только поддержка и принятие, здесь мне комфортно, безопасно и интересно.</span>
@@ -422,6 +413,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -437,7 +429,8 @@
   </div>
 
 
-        <div class="card text-bg-white mb-3 rounded-5 col-3" style="transform: rotate(-1deg);">
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(-1deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F468-200D-1F393.svg" width="40" /></span>Егор</h5>
       <span class="card-text crop-text-3 col-12">За время работы в Архиве мне довелось познакомиться с источниками по масштабной общественной кампании, инициированной советскими властями и направленной против Андрея Дмитриевича Сахарова и его общественной деятельности. Преимущественно это личные и коллективные письма граждан СССР и различных объединений, присланные из самых разных уголков страны. Больше всего меня поразил, пожалуй, именно масштаб кампании: в ней участвовали самые разные люди и учреждения из разных республик. Также при беглом прочтении писем на глаза бросались очень похожие одна на другую формулировки, присутствовавшие в различных письмах. Сахаров объявлялся в этих письмах «предателем Родины, пособником Белого Дома» и т.д. Это позволило получить определенное представление о методах пропаганды в тоталитарном советском государстве. Тот факт, что работа по сканированию происходит в квартире Сахарова, создает особенную атмосферу: прикосновение к прошлому нашей страны, к жизни одного из выдающихся людей в её истории ощущается особенно ярко. Интересно было пройтись по квартире, для меня наибольший интерес представила огромная по своим масштабам личная библиотека Сахарова. Особенно ценным для меня был момент, когда на одной из полок я обнаружил книгу известного теоретика русского либерализма Николая Ивановича Тургенева «Россия и русские». Дело в том, что как раз во время работы в Архиве я писал курсовую работу по этой книге в своём вузе. Это вызвало во мне на мгновение чувство какой-то личной связи с Сахаровым: «Подумать только: вероятно, Андрей Дмитриевич читал ту же книгу, которую я выбрал для своей научной работы. Вероятно, она тоже ему понравилась».</span>
@@ -446,6 +439,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -460,9 +454,9 @@
     </div>
   </div>
 
-      </div>
-      <div class="d-flex justify-content-evenly col-7 mx-auto pt-3 mb-3 pb-4 mb-4">
-        <div class="card text-bg-white mb-3 rounded-5 col-4" style="transform: rotate(1deg);">
+
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(1deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F64B-200D-2640-FE0F.svg" width="40" /></span>Саша</h5>
       <span class="card-text crop-text-3 col-12">Я стараюсь участвовать во всём (не всегда получается - но постараюсь это исправить), но особое внимание уделяю работе с Декларатором. За это время поучаствовал в ШЕБ, где особенно интересно было послушать про историю диссидентского движения, прошел курс в Свободном университете. Очень рад, что стал частью команды, где столько интересных людей (что помогает осознать, что ты не одинок). По пунктам что ещё нравится: 1) разнонаправленность задач; 2) наличие возможности делать что-то дистанционно (это прямо топ); 3) дополнительные мероприятия, комьюнити если можно так сказать - всякие клубы, встречи, поддержка; 4) идеальный старт для активизма.</span>
@@ -471,6 +465,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -486,7 +481,8 @@
   </div>
 
         
-        <div class="card text-bg-white mb-3 rounded-5 col-4" style="transform: rotate(2deg);">
+        <div class="col px-4">
+<div class="card text-bg-white mb-3 rounded-5" style="transform: rotate(2deg);">
     <div class="card-body">
       <h5 class="card-title fw-bolder"><span class="badge text-bg-light bg-transparent position-relative py-0 ps-0 pe-1" style="top:-4px;"><img src="./icons/1F9B8-200D-2640-FE0F.svg" width="40" /></span>Изабелла</h5>
       <span class="card-text crop-text-3 col-12">Я из Германии и уже давно занимаюсь политикой и историей России, русский язык учила в школе и сейчас в университете изучаю историю восточной Европы. Мне очень нравится сканирование в архиве. Всем рекомендую это сделать, я там много узнала о Сахарове и диссидентстве в СССР. К сожалению, я уже вернулась в Германию и больше не могу помогать очно, но стараюсь что в будущем помочь дистанционно. Я скучаю по очному волонтерству. Мне очень понравилось познакомиться с такими хорошими людьми, которые все вступаются за свободную Россию будущего.</span>
@@ -495,6 +491,7 @@
         <img src="./icons/ellipsis.svg" width="40" />
     </button>
   </div>
+</div>
 
   <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -514,9 +511,9 @@
 </div>
 
 <div class="container-fluid bg-gold">
-  <div class="row col-6 py-5 mx-auto">
+  <div class="row col-12 col-md-10 col-lg-6 py-5 mx-auto">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <h2 id="faq" class="display-0 text-center fw-bolder py-5 text-uppercase text-white text-around-0 letter-spacing-2">FAQ</h2>
+      <h2 id="faq" class="display-1 text-center fw-bolder py-5 text-uppercase text-white text-around-0 letter-spacing-2">FAQ</h2>
       <div class="panel panel-default">
         
         <div class="panel panel-default">
@@ -652,9 +649,9 @@
   </div>
 </div>
 
-<div class="container-fluid bg-green-rotate px-0 border-top border-bottom border-2 border-black">
+<div class="container-fluid bg-green-rotate border-top border-bottom border-2 border-black">
   <div class="row col-10 my-5 mx-auto p-5">
-    <h2 id="contacts" class="display-0 text-center fw-bolder pt-4 pb-5 text-uppercase text-white text-around-0 letter-spacing-2">Контакты</h2>
+    <h2 id="contacts" class="display-1 text-center fw-bolder pt-4 pb-5 text-uppercase text-white text-around-0 letter-spacing-2">Контакты</h2>
 
   </div>
 </div>
@@ -664,11 +661,21 @@
 
   </main>
   <footer>
-    <footer class="footer fixed-bottom bg-dark">
+    <footer class="footer py-5 bg-cyan">
+<div class="container">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">О команде</a></li>
+    <li class="nav-item"><a href="#campaigns" class="nav-link px-2 text-body-secondary">Кому мы помогаем</a></li>
+    <li class="nav-item"><a href="#assistance" class="nav-link px-2 text-body-secondary">Как именно помогаем</a></li>
+    <li class="nav-item"><a href="#testimonials" class="nav-link px-2 text-body-secondary">Отзывы</a></li>
+    <li class="nav-item"><a href="#faq" class="nav-link px-2 text-body-secondary">FAQ</a></li>
+    <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-body-secondary">Контакты</a></li>
+  </ul>
 
     <div class="row footer-text">
       <div class="col-12 col-md text-center text-md-left nav-link text-white">Волонтерская команда Сахарова - проект, 2023</div>
     </div>
+</div>
 
   
 
@@ -699,6 +706,17 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const offcanvasLinks = document.querySelectorAll('.nav-link');
+    const offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasNavMain'));
+    offcanvasLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        offcanvas.hide();
+      });
+    });
+  });
   </script>
 </footer>
   </footer>

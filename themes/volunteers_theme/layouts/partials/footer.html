@@ -1,8 +1,18 @@
-<footer class="footer fixed-bottom bg-dark">
+<footer class="footer py-5 bg-cyan">
+<div class="container">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">О команде</a></li>
+    <li class="nav-item"><a href="#campaigns" class="nav-link px-2 text-body-secondary">Кому мы помогаем</a></li>
+    <li class="nav-item"><a href="#assistance" class="nav-link px-2 text-body-secondary">Как именно помогаем</a></li>
+    <li class="nav-item"><a href="#testimonials" class="nav-link px-2 text-body-secondary">Отзывы</a></li>
+    <li class="nav-item"><a href="#faq" class="nav-link px-2 text-body-secondary">FAQ</a></li>
+    <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-body-secondary">Контакты</a></li>
+  </ul>
 
     <div class="row footer-text">
       <div class="col-12 col-md text-center text-md-left nav-link text-white">Волонтерская команда Сахарова - проект, 2023</div>
     </div>
+</div>
 
   <!-- JavaScript and dependencies -->
 
@@ -33,5 +43,16 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const offcanvasLinks = document.querySelectorAll('.nav-link');
+    const offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasNavMain'));
+    offcanvasLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        offcanvas.hide();
+      });
+    });
+  });
   </script>
 </footer>
