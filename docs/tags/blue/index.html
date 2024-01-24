@@ -27,7 +27,7 @@
     <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
     </button>
-    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+    <div class="offcanvas offcanvas-end h-auto collapse" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
       <div class="offcanvas-header">
         <button type="button" class="btn btn-link nav-link p-0" data-bs-dismiss="offcanvas" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
@@ -83,16 +83,16 @@
     <footer class="footer py-5 bg-cyan">
 <div class="container">
   <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">О команде</a></li>
-    <li class="nav-item"><a href="#campaigns" class="nav-link px-2 text-body-secondary">Кому мы помогаем</a></li>
-    <li class="nav-item"><a href="#assistance" class="nav-link px-2 text-body-secondary">Как именно помогаем</a></li>
-    <li class="nav-item"><a href="#testimonials" class="nav-link px-2 text-body-secondary">Отзывы</a></li>
-    <li class="nav-item"><a href="#faq" class="nav-link px-2 text-body-secondary">FAQ</a></li>
-    <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-body-secondary">Контакты</a></li>
+    <li class="nav-item"><a href="#about" class="nav-link px-2 text-body">О команде</a></li>
+    <li class="nav-item"><a href="#campaigns" class="nav-link px-2 text-body">Кому мы помогаем</a></li>
+    <li class="nav-item"><a href="#assistance" class="nav-link px-2 text-body">Как именно помогаем</a></li>
+    <li class="nav-item"><a href="#testimonials" class="nav-link px-2 text-body">Отзывы</a></li>
+    <li class="nav-item"><a href="#faq" class="nav-link px-2 text-body">FAQ</a></li>
+    <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-body">Контакты</a></li>
   </ul>
 
     <div class="row footer-text">
-      <div class="col-12 col-md text-center text-md-left nav-link text-white">Волонтерская команда Сахарова - проект, 2023</div>
+      <div class="col-12 col-md text-center text-md-left nav-link text-body">Волонтерская команда Сахарова, 2024</div>
     </div>
 </div>
 
@@ -127,15 +127,34 @@
     }
   </script>
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const offcanvasLinks = document.querySelectorAll('.nav-link');
-    const offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasNavMain'));
-    offcanvasLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-        offcanvas.hide();
-      });
+    document.addEventListener('DOMContentLoaded', function () {
+  
+  var mobileMenuLinks = document.querySelectorAll('#offcanvasNavMain a.nav-link');
+
+  
+  mobileMenuLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      
+      event.preventDefault();
+
+      
+      var targetId = link.getAttribute('href').substring(1); 
+
+      
+      var mobileMenu = document.getElementById('offcanvasNavMain');
+      var bsCollapse = new bootstrap.Collapse(mobileMenu, { toggle: false });
+      bsCollapse.hide();
+
+      
+      setTimeout(function () {
+        
+        document.getElementById(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }, 300); 
     });
   });
+});
   </script>
 </footer>
   </footer>
